@@ -2,6 +2,8 @@
 
 The final project is a program that displays the medal winners in several sports in a Winter Olympics. A GUI will list the sports, and when the user selects one, it will display the medal winners for that sport. It uses a file to store the data, writes to it with new data, and reads from it for all data.
 
+![olympics](https://github.com/bell-kevin/olympics/blob/main/olympics.PNG)
+
 There are 2 major categories of events – timed and scored. In a scored event, like figure skating, the highest score wins. In a timed event, like speed skating, the lowest time wins. Your project must handle both scored and timed events, sorting the scores appropriately to identify the medal winners. Note that there MUST be sorting in the project, using a sorting algorithm you add to the code -- do not use a sorting method in the library. Do not store the data already sorted.
 
 Create 4 events, 2 scored and 2 times, with 5 competitors in each event. You only need the names of the competitors, plus their score/time, no other details. Create a file that contains the data for those 4 events -- pre-load it with the competitors and their scores/times by typing the data into a file, which will be read into the program. Make sure the data is not in sorted order.
@@ -13,8 +15,6 @@ Create a GUI to display the medal winners in the selected event. List the events
 Carefully check the rubric, make sure you have addressed all the elements listed.
 
 As this is a project to measure your competency, you must do this work on your own. You may ask the instructors for clarification. This is not a team project or a collaborative effort, the code and logic must be yours alone.
-
- 
 
 Submission
 
