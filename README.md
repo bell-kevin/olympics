@@ -22,13 +22,6 @@ Submit the root folder for the final project. If it doesn’t run on the instruc
 
 Note the following rubric for submissions of this project, which will be included in the final grade.
 
-Submissions	Minimal input
-from instructor	Lots of input
-from instructor
-First try	50	40
-Second try	45	30
-Third try	40	20
-More tries	35	10
 The maximum score for a perfect project submitted on the first try is 200 points. Remember that you need 80% or 160 points to pass. Anything between those values of 160 and 200 is still passing. Be aware of the time you have left to work on this project -- don't work on perfection to the point that you run out of time.
 
 == We're Using GitHub Under Protest ==
