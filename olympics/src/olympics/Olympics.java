@@ -28,8 +28,7 @@ public final class Olympics extends JFrame {
             lblGoldScore, lblSilverLabel, lblSilver, lblSilverScore,
             lblBronzeLabel, lblBronze, lblBronzeScore, lblEventType;
     CardLayout cardLayout;
-    //pnlAdd components:
-    JButton btnBack, btnGo;
+    JButton btnBack, btnGo;     //pnlAdd components:
     JLabel lblContestants, lblScores, lblName;
     JRadioButton rdbTimed, rdbScored;
     ButtonGroup eventGroup = new ButtonGroup();
@@ -44,8 +43,7 @@ public final class Olympics extends JFrame {
         this.setSize(500, 300);
         this.setLayout(new BoxLayout(this.getContentPane(), BoxLayout.LINE_AXIS));
         c = new GridBagConstraints();
-        //existing events:
-        events.add(new ScoredEvent("Figure Skating"));
+        events.add(new ScoredEvent("Figure Skating"));     //existing events:
         events.get(0).addContestant("United Kingdom", 6);
         events.get(0).addContestant("United States", 9.5);
         events.get(0).addContestant("Russia", 8.3);
@@ -72,13 +70,10 @@ public final class Olympics extends JFrame {
         events.get(3).addContestant("Mexico", 37);
         events.get(3).addContestant("Spain", 25.5);
         events.get(3).addContestant("Luxemburg", 30.5);
-        events.get(3).sortContestants();
-        //end hard coded
-        //contents
-        pnl1 = new JPanel();
+        events.get(3).sortContestants();         //end hard coded
+        pnl1 = new JPanel();         //contents
         pnl1.setLayout(new GridLayout(5, 1, 15, 15));
-        //combo box
-        cmbEvent = new JComboBox();
+        cmbEvent = new JComboBox();         //combo box
         fillComboBox();
         cmbEvent.addActionListener(new ActionListener() {
             @Override
@@ -163,8 +158,7 @@ public final class Olympics extends JFrame {
         pnl2 = new JPanel();
         cardLayout = new CardLayout();
         pnl2.setLayout(cardLayout);
-        //pnlView:
-        pnlView = new JPanel();
+        pnlView = new JPanel();         //pnlView:
         pnlView.setLayout(new GridBagLayout());
         c.insets = new Insets(5, 5, 5, 5);
         lblEventName = new JLabel();
@@ -180,8 +174,7 @@ public final class Olympics extends JFrame {
         lblBronzeLabel = new JLabel(new ImageIcon("bronze.png"));
         lblBronze = new JLabel();
         lblBronzeScore = new JLabel();
-        //pnlAdd:
-        pnlAdd = new JPanel();
+        pnlAdd = new JPanel();         //pnlAdd:
         pnlAdd.setLayout(new GridLayout(10, 2, 30, 5));
         rdbTimed = new JRadioButton("Timed event");
         rdbScored = new JRadioButton("Scored event");
@@ -234,8 +227,7 @@ public final class Olympics extends JFrame {
         for (int i = 0; i < txtContestants.length; i++) {
             txtContestants[i] = new JTextField(3);
             txtScores[i] = new JTextField(5);
-        }
-        //end contents
+        }        //end contents
         createContents();
         cmbEvent.setSelectedIndex(0);
         this.setVisible(true);
@@ -248,17 +240,14 @@ public final class Olympics extends JFrame {
     }
 
     public void createContents() {
-        //panel 1
-        pnl1.add(cmbEvent);
+        pnl1.add(cmbEvent); //panel 1
         pnl1.add(btnNewEvent);
         pnl1.add(btnDelete);
         pnl1.add(btnSave);
         pnl1.add(btnLoad);
         this.add(pnl1);
-        //panelView:
-        this.add(new JSeparator(JSeparator.VERTICAL));
-        //c = layout constraints
-        c.gridx = 0;
+        this.add(new JSeparator(JSeparator.VERTICAL)); //panelView:
+        c.gridx = 0; //c = layout constraints
         c.gridy = 0;
         pnlView.add(lblEventName, c);
         c.gridy = 1;
@@ -291,8 +280,7 @@ public final class Olympics extends JFrame {
         pnlView.add(lblBronzeScore, c);
         pnl2.add("view", pnlView);
         pnl2.add("add", pnlAdd);
-        //pnlAdd:
-        pnlAdd.add(btnBack);
+        pnlAdd.add(btnBack); //pnlAdd:
         pnlAdd.add(new JLabel(""));
         pnlAdd.add(lblName);
         pnlAdd.add(txtName);
@@ -308,8 +296,7 @@ public final class Olympics extends JFrame {
         }
         pnlAdd.add(new JLabel(""));
         pnlAdd.add(btnGo);
-        //pnl2 (holds cardLayout)
-        this.add(pnl2);
+        this.add(pnl2); //pnl2 (holds cardLayout)
     }
 
     public void outputMedals(Event event) {
