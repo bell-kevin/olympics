@@ -16,8 +16,7 @@ public abstract class Event implements Serializable {
 //******************************************************************************
     //constructors
 
-    //this one for the hard coded events
-    public Event(String name) {
+    public Event(String name) {    //this one for the hard coded events
         this.eventName = name;
     }
 
@@ -27,10 +26,7 @@ public abstract class Event implements Serializable {
         this.contestants = contestants;
 
         this.sortContestants();
-
-        //call in constructor?
-    }
-    //end constructors
+    }     //end constructors
 //******************************************************************************
 
     public ArrayList<Contestant> getContestants() {
