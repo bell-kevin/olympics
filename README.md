@@ -1,6 +1,6 @@
 # olympics
 
-The final project is a program that displays the medal winners in several sports in a Winter Olympics. A GUI will list the sports, and when the user selects one, it will display the medal winners for that sport. It uses a file to store the data, writes to it with new data, and reads from it for all data
+The final project is a program that displays the medal winners in several sports in a Winter Olympics. A GUI will list the sports, and when the user selects one, it will display the medal winners for that sport. It uses a file to store the data, writes to it with new data, and reads from it for all data.
 
 ![olympics](https://github.com/bell-kevin/olympics/blob/main/olympics.PNG)
 
