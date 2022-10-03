@@ -16,14 +16,12 @@ public class ScoredEvent extends Event {
 
     public ScoredEvent(String name, ArrayList<Contestant> list) {
         super(name, list);
-    }
-    //called in super constructor
+    }     //called in super constructor
 
     @Override
-    public void bubbleSortContestants(ArrayList<Contestant> contestants, int numContestants) {
-        //sorts high to low
-        //System.out.print("Sorting   ");
-        if (numContestants == 1) {
+    public void bubbleSortContestants(ArrayList<Contestant> contestants,
+            int numContestants) {
+        if (numContestants == 1) {         //sorts high to low
             return;
         }
         for (int i = 0; i < numContestants - 1; i++) {
